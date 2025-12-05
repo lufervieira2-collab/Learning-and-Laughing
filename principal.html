@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Learning & Laughing — Principal</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <div class="brand">
+        <img src="img/logo.png" alt="Logo" class="sidebar-logo">
+
+        <div class="brand-text">
+          
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Seções">
+        <button class="nav-item active" data-section="home"><span class="ico">🏠</span><span class="nav-text">Início</span></button>
+        <button class="nav-item" data-section="recents"><span class="ico">🕘</span><span class="nav-text">Recentes</span></button>
+        <button class="nav-item" data-section="new"><span class="ico">✨</span><span class="nav-text">Novo</span></button>
+        <button class="nav-item" data-section="popular"><span class="ico">🔥</span><span class="nav-text">Em alta</span></button>
+        <button class="nav-item" data-section="games"><span class="ico">🎮</span><span class="nav-text">Jogos</span></button>
+        <a class="nav-item" data-section="Aulas" href="aulas.html">
+    <span class="ico">📚</span>
+    <span class="nav-text">Aulas</span>
+</a>
+
+      </nav>
+
+      <div class="sidebar-footer">
+        <small>Disponível em todos os dispositivos</small>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <!-- TOP BAR -->
+      <header class="topbar">
+        <div class="left-controls">
+          <button id="menuToggle" class="menu-btn" aria-label="Abrir menu">☰</button>
+          <div class="brand-mini">
+            
+          </div>
+        </div>
+
+        <div class="search" role="search">
+          <label for="searchInput" class="sr-only">Pesquisar conteúdo</label>
+          <input id="searchInput" placeholder="Conteúdo" aria-label="Pesquisar conteúdo" />
+          <button id="searchBtn" aria-label="Pesquisar">🔍</button>
+        </div>
+
+        <div class="top-actions">
+          <button id="themeToggle" class="icon-btn" aria-label="Alternar tema">🌓</button>
+          <button class="icon-btn" title="Notificações" aria-label="Notificações">🔔</button>
+          <a href="cadastro.html" class="pill" role="button">Cadastre-se</a>
+        </div>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <section class="content" aria-live="polite">
+
+        <!-- banner -->
+        <div class="banner" role="img" aria-label="Banner principal">
+          <!-- imagem local enviada pelo usuário -->
+          <img src="./img/banner.png" alt="Banner principal">
+        </div>
+
+        <div class="row-header">
+          <h3>Mais Jogados</h3>
+          <div class="row-actions" aria-hidden="true">
+            <span class="badge">50+ jogos</span>
+            <span class="badge">Sem instalação</span>
+          </div>
+        </div>
+
+        <div id="cards" class="cards-grid" role="list">
+          <!-- cards gerados por JS -->
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Modal preview -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-inner" role="document">
+      <button id="closeModal" class="modal-close" aria-label="Fechar">✕</button>
+      <img id="modalImg" src="" alt="" />
+      <h4 id="modalTitle"></h4>
+      <p id="modalDesc"></p>
+      <div class="modal-actions">
+        <button id="playNow" class="btn primary">Jogar</button>
+        <button id="viewMore" class="btn secondary">Mais informações</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="principal.js"></script>
+
+
+  <!-- Botão de acessibilidade auditiva -->
+<div class="access-auditiva">
+    <img src="img/libras.oi.gif" alt="Acessibilidade Auditiva">
+</div>
+
+</body>
+</html>

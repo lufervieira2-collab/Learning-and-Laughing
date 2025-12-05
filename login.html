@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Learning and Laughing</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ESQUERDA -->
+    <div class="left">
+        <img src="img/logo.png" class="logo" alt="Logo">
+
+        <h1 class="title">Olá, Amigo!</h1>
+
+        <p class="text">
+            Cadastre-se e faça a diferença,<br>
+            Aprenda de uma forma Diferente e espontânea,<br>
+            Contribua para o site e faça sua Inscrição
+        </p>
+<a href="cadastro.html">
+        <button class="btn-white">Inscreva-se</button>
+    </a>
+    </div>
+
+    <!-- DIREITA -->
+    <div class="right">
+
+        <h2 class="login-title">Login</h2>
+
+        <form id="loginForm">
+            <div class="input-box">
+                <span class="icon">📧</span>
+                <input type="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="input-box">
+                <span class="icon">🔒</span>
+                <input type="password" placeholder="Crie sua senha" required>
+            </div>
+
+          <button type="button" class="btn-dark" id="btnEntrar">Entrar</button>
+
+            <p class="signup-text">
+                Cadastrar uma conta? <a href="cadastro.html">Cadastre-se</a>
+            </p>
+        </form>
+
+        <div class="separator">OU</div>
+
+        <div class="social-login">
+            <img src="img/google.svg" alt="Google" class="google">
+            <img src="img/facebook.svg" alt="Facebook" class="facebook">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>

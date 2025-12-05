@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aulas • Learning and Laughing</title>
+<link rel="stylesheet" href="aulas.css">
+</head>
+
+<link rel="stylesheet" href="aulas.css">
+<script src="aulas.js" defer></script>
+
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo-area">
+            <img src="img/logo.png" class="logo-img" alt="Logo">
+        </div>
+
+        <a href="index.html" class="nav-item">🏠 Início</a>
+        <a href="#" class="nav-item">🕒 Recentes</a>
+        <a href="#" class="nav-item">✨ Novo</a>
+        <a href="#" class="nav-item">🔥 Em alta</a>
+        <a href="#" class="nav-item">🎮 Jogos</a>
+        <a href="aulas.html" class="nav-item active">📚 Aulas</a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- HEADER IGUAL AO DA FOTO -->
+        <header class="topbar">
+            <div class="menu-icon">☰</div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Conteúdo">
+            </div>
+
+            <div class="icons">
+                <span class="icon">🔍</span>
+                <span class="icon">🌙</span>
+                <span class="icon">🔔</span>
+                <button class="btn-register">Cadastre-se</button>
+            </div>
+        </header>
+
+        <h1 class="titulo">Vídeo Aulas</h1>
+
+<div class="thumbs-container">
+
+   <div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/alfabeto.aula.png" alt="Vídeo aula 1">
+    <p>Introdução ao Alfabeto</p>
+</div>
+
+<div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/Jogo dos números.png" alt="Vídeo aula 2">
+    <p>Números Divertidos</p>
+</div>
+
+<div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/geometrias.jpg" alt="Vídeo aula 3">
+    <p>Aprendendo Formas</p>
+</div>
+
+
+<div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/ciências.jpg" alt="Vídeo aula 4">
+    <p>Ciência</p>
+</div>
+
+<div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/soma divertida.jpg" alt="Vídeo aula 5">
+    <p>Soma divertida</p>
+</div>
+
+<div class="thumb-card" onclick="openPopup(this)">
+    <img src="img/Desenhos.jpg" alt="Vídeo aula 6">
+    <p>Aprendendo a desenhar</p>
+</div>
+
+
+</div>
+
+<!-- POPUP (MODAL) -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup()">×</span>
+
+        <img id="popupImg" src="">
+        <h2 id="popupTitle"></h2>
+
+        <button class="btn-assistir">Assistir Aula</button>
+
+    </div>
+</div>
+
+
+    </main>
+
+</div>
+
+</body>
+</html>

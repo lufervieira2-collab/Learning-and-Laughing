@@ -1,0 +1,297 @@
+/* ======================================================
+   RESET E BASE
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+/* ======================================================
+   CONTAINER GERAL
+====================================================== */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* ======================================================
+   LADO ESQUERDO
+====================================================== */
+.left {
+    width: 50%;
+    background: #1c1c1c;
+    color: white;
+    padding: 40px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff4fb3;
+    margin-bottom: 20px;
+}
+
+.left p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.back {
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back:hover {
+    opacity: 0.7;
+}
+
+/* ======================================================
+   LADO DIREITO (FORMULÁRIO)
+====================================================== */
+.right {
+    width: 50%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Input Box */
+.input-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #eaeaea;
+    padding: 12px 20px;
+    border: 2px solid #555;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box .icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 16px;
+    background: #181818;
+    color: white;
+    border-radius: 15px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Textos extras */
+.login-link {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.login-link a {
+    color: #4434ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ou {
+    margin: 15px 0 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social img {
+    width: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+/* ======================================================
+   RESPONSIVIDADE — TABLET
+====================================================== */
+@media (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        border-radius: 0;
+        padding: 40px;
+    }
+
+    .left h1, .right h2 {
+        text-align: center;
+        font-size: 36px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+}
+
+/* ======================================================
+   RESPONSIVIDADE — CELULAR GRANDE
+====================================================== */
+@media (max-width: 768px) {
+
+    .left {
+        padding: 30px 20px;
+    }
+
+    .right {
+        padding: 40px 25px;
+    }
+
+    .left h1, .right h2 {
+        font-size: 32px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .input-box {
+        padding: 10px 16px;
+    }
+
+    .input-box input {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+/* ======================================================
+   RESPONSIVIDADE — CELULAR PEQUENO
+====================================================== */
+@media (max-width: 480px) {
+
+    .logo {
+        width: 120px;
+    }
+
+    .left h1, .right h2 {
+        font-size: 28px;
+    }
+
+    .left p {
+        font-size: 15px;
+    }
+
+    .right {
+        padding: 30px 20px;
+    }
+
+    .input-box {
+        padding: 8px 14px;
+        border-radius: 10px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .login-link {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+/* ====== ANIMAÇÃO LIVRO – METADES ====== */
+
+@keyframes leftBook {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightBook {
+    from {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* APLICA EM CADA LADO */
+.left {
+    animation: leftBook 0.9s ease-out forwards;
+}
+
+.right {
+    animation: rightBook 0.9s ease-out forwards;
+}
+
