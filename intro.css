@@ -1,0 +1,194 @@
+/* Fonte geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.brand {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ff0080;
+}
+
+.brand .yellow { color: #ffcc00; }
+.brand .green { color: #00b32d; }
+
+/* Layout principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 50%;
+}
+
+/* Título */
+.title {
+    font-size: 55px;
+    font-weight: 700;
+    color: #A30076;
+    line-height: 1.2;
+}
+
+.pink {
+    color: #E665C6;
+}
+
+.desc {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    width: 80%;
+}
+
+/* Botão */
+.btn-enter {
+    margin-top: 40px;
+    font-size: 22px;
+    padding: 16px 40px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff0080, #c40074);
+    transition: 0.2s;
+}
+
+.btn-enter:hover {
+    transform: scale(1.05);
+}
+
+/* Imagem */
+.hero-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE PROFISSIONAL
+   ========================================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .left, 
+    .right {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .desc {
+        width: 100%;
+    }
+}
+
+/* Tablets pequenos */
+@media (max-width: 768px) {
+    .title {
+        font-size: 45px;
+    }
+
+    .brand {
+        font-size: 26px;
+    }
+
+    header {
+        padding: 15px 25px;
+    }
+
+    .container {
+        padding: 40px 25px;
+    }
+}
+
+/* Celulares médios */
+@media (max-width: 600px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .btn-enter {
+        font-size: 20px;
+        padding: 14px 30px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .btn-enter {
+        font-size: 18px;
+        padding: 12px 25px;
+        border-radius: 8px;
+    }
+
+    .brand {
+        font-size: 22px;
+    }
+
+    header {
+        gap: 10px;
+    }
+}
+
+/* Celulares muito pequenos */
+@media (max-width: 360px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .btn-enter {
+        font-size: 16px;
+        padding: 10px 22px;
+    }
+
+
+
+    
+}
